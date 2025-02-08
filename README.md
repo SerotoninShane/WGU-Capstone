@@ -1,50 +1,47 @@
-Project: Recommended - A Book Recommendation System
+# WGU Capstone - Book Recommendation System
 
-Description:
-The "Recommended" package provides book recommendation functionalities using various machine learning models. It supports multiple recommendation techniques, including K-Nearest Neighbors (KNN) and Cosine Similarity. This package is designed to help users find books similar to their preferences.
+## Description
+This project aims to build a book recommendation system based on genres and other metadata from the Goodreads dataset. The system uses algorithms such as KNN (K-Nearest Neighbors) and Cosine Similarity to recommend books based on user input.
 
-Key Features:
-- Book recommendation system using KNN
-- Cosine similarity-based book recommendations
-- Popular book identification based on user preferences
-- Streamlit integration for a web interface
+## Source Code Location
+The source code is available on GitHub: [https://github.com/SerotoninShane/WGU-Capstone](https://github.com/SerotoninShane/WGU-Capstone)
 
-Files:
-- popular_books.py: Contains logic for fetching and displaying popular books.
-- recommended_books.py: Contains the main logic for recommending books based on different algorithms.
-- recommend_knn.py: Implements the K-Nearest Neighbors algorithm for book recommendations.
-- recommend_cosine.py: Uses cosine similarity to suggest similar books.
-- compute_similarity.py: Computes similarity between books based on features like genre or description.
+### Main files:
+- **`python/main.py`**: Streamlit application for displaying recommendations.
+- **`python/recommend.py`**: Algorithm for generating book recommendations.
+- **`python/data/`**: Folder containing the `books.csv` dataset.
 
-How to Install:
-To install the "Recommended" package, run the following command:
+## Dependencies
+The following libraries are required to run the project:
+- `streamlit`: For the app interface.
+- `scikit-learn`: For machine learning algorithms.
+- `pandas`: For data manipulation.
+- `numpy`: For numerical operations.
 
-pip install recommended/
+## Installation Steps
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/SerotoninShane/WGU-Capstone.git
+   cd WGU-Capstone
+   ```
 
-How to Use:
-After installation, you can use the functionalities in your Python code.
+2. Install the required dependencies:
+   ```bash
+   pip install -r python/requirements.txt
+   ```
 
-Example:
-from recommended import get_popular_books, recommend_knn
+3. Ensure the `books.csv` dataset is in the `python/data/` folder. If not, download it from [Kaggle: Goodreads Books with Genres](https://www.kaggle.com/datasets/middlelight/goodreadsbookswithgenres?resource=download).
 
-# Get popular books
-popular_books = get_popular_books()
+4. Run the application:
+   ```bash
+   streamlit run python/main.py
+   ```
 
-# Get book recommendations using KNN
-recommended_books = recommend_knn(book_id=1)
+5. The app will open in your default web browser, and you can input book details to get similar book recommendations.
 
-For a Streamlit interface, you can use:
+## Usage
+- Input a book or author name to see a list of recommended books based on your input.
+- The recommendation system leverages machine learning algorithms to find similar books based on shared genres and other metadata.
 
-streamlit run app.py
-
-Where app.py contains the streamlit interface logic for displaying book recommendations.
-
-Dependencies:
-- Python 3.x
-- pandas
-- numpy
-- scikit-learn
-- streamlit
-
-Contact:
-If you have any questions or need help, feel free to contact us at support@yourdomain.com
+## License
+This project is open-source and available under the MIT License. See the [LICENSE](LICENSE) file for more details.
