@@ -22,7 +22,7 @@ The following libraries are required to run the project:
 1. Clone the repository:
    ```bash
    git clone https://github.com/SerotoninShane/WGU-Capstone.git
-   cd WGU-Capstone
+   cd WGU-Capstone/python
    ```
 
 2. Install the required dependencies:
