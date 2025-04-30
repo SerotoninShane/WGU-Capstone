@@ -3,7 +3,7 @@ import streamlit as st
 from ml_models import recommend_knn, recommend_cosine, compute_similarity
 
 # Load the dataset
-df = pd.read_csv("data/books.csv")
+df = pd.read_csv("python/data/books.csv")
 
 def display_recommendations():
     selected_book = st.selectbox("Select a book", df["Title"].dropna().unique())
