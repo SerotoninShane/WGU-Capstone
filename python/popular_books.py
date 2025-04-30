@@ -2,7 +2,7 @@ import pandas as pd
 import streamlit as st
 
 # Load the dataset
-df = pd.read_csv("data/books.csv")
+df = pd.read_csv("python/data/books.csv")
 
 # Calculate global average rating
 global_avg = df['average_rating'].mean()
