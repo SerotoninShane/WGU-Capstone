@@ -1,3 +1,5 @@
+![Capstone Image](/Capstone.png)
+
 # WGU Capstone - Book Recommendation System
 
 ## Description
