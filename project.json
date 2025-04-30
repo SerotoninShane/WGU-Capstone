@@ -1,4 +1,5 @@
 {
-  "technologies": ["React", "Canvas API", "AI"],
-  "image": "Space.png"
+  "image": "Capstone.png",
+  "technologies": ["Python", "Streamlit", "scikit-learn"],
+  "website": "https://wgu-capstone.streamlit.app/"
 }
